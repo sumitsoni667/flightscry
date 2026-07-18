@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Flightscry</string>
+    <string name="flight_information">Flight Information</string>
+    <string name="flight_number">Flight: BA 123</string>
+    <string name="departure">Departure</string>
+    <string name="departure_airport">LHR</string>
+    <string name="departure_time">10:30 AM</string>
+    <string name="arrival">Arrival</string>
+    <string name="arrival_airport">JFK</string>
+    <string name="arrival_time">2:45 PM</string>
+</resources>

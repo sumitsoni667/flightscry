@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <net.skyscanner.backpack.card.BpkCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cornerStyle="large"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Flight Title -->
+            <net.skyscanner.backpack.text.BpkText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flight Information"
+                style="@style/bpkTextHeading1"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Flight Number -->
+            <net.skyscanner.backpack.text.BpkText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flight: BA 123"
+                style="@style/bpkTextBodyDefault"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Departure Card -->
+            <net.skyscanner.backpack.card.BpkCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                app:cornerStyle="small">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Departure"
+                        style="@style/bpkTextHeading2"
+                        android:layout_marginBottom="8dp" />
+
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LHR"
+                        style="@style/bpkTextHeading1"
+                        android:layout_marginBottom="4dp" />
+
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:30 AM"
+                        style="@style/bpkTextBodyDefault" />
+
+                </LinearLayout>
+            </net.skyscanner.backpack.card.BpkCardView>
+
+            <!-- Arrival Card -->
+            <net.skyscanner.backpack.card.BpkCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                app:cornerStyle="small">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arrival"
+                        style="@style/bpkTextHeading2"
+                        android:layout_marginBottom="8dp" />
+
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JFK"
+                        style="@style/bpkTextHeading1"
+                        android:layout_marginBottom="4dp" />
+
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2:45 PM"
+                        style="@style/bpkTextBodyDefault" />
+
+                </LinearLayout>
+            </net.skyscanner.backpack.card.BpkCardView>
+
+        </LinearLayout>
+    </net.skyscanner.backpack.card.BpkCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
